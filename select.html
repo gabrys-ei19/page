@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sebastian Gabryś">
+    <link rel="stylesheet" href="style.css">
+    <title>Projekt zdarzeniowy</title>
+</head>
+<body>
+    <header><h1><a href="index.html">Zdareznia w Java Script</a></h1></header>
+    <nav>
+        <h2>Przykładowe Zdarzenia</h2>
+        <ul>
+            <li><a href="click.html">click</a></li>
+            <li><a href="dblclick.html">double click</a></li>
+            <li><a href="mouseup-down.html">mouseup i mousedown</a></li>
+            <li><a href="mouseout-over.html">mouseover i mouseout</a></li>
+            <li><a href="mousemove.html">mouse move</a></li>
+            <li><a href="select.html">select</a></li>
+            <li><a href="focus.html">focus</a></li>
+            <li><a href="blur.html">blur</a></li>
+            <li><a href="change.html">change</a></li>
+        </ul>
+    </nav>
+    <div class="opis">
+        <h3>Opis Zdareznia</h3>
+        <p>
+            Zdarezenie <i>select</i> aktywuje się po zaznaczeniu tekstu znajdującego się w polu tekstowym. <br><br>
+            Poniej zanajdują się trzy elemety z tekstem do zaznaczenia, po zaznaczeniu tekstu w nich się znajdującego w czwartym pustym elemencie pojawi się napis.
+        </p>
+        <input id="f" class="zaz" type="text" value="Obszar zaznaczenia numer 1" onselect="selekt()" onfocus="czysc()" readonly/>
+        <input id="f" class="zaz" type="text" value="Obszar zaznaczenia numer 2" onselect="selekt()" onfocus="czysc()" readonly/>
+        <input id="f" class="zaz" type="text" value="Obszar zaznaczenia numer 3" onselect="selekt()" onfocus="czysc()" readonly/>
+        <input id="fi" class="wynik" type="text" value="" onfocus="czysc()" readonly/>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="przykład">
+        <p></p>
+    </div>
+    <footer>&copy; Sebastian Gabryś 2022</footer>
+    <script src="java.js"></script>
+</body>
+</html>

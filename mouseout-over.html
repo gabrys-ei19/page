@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sebastian Gabryś">
+    <link rel="stylesheet" href="style.css">
+    <title>Projekt zdarzeniowy</title>
+</head>
+<body>
+    <header><h1><a href="index.html">Zdareznia w Java Script</a></h1></header>
+    <nav>
+        <h2>Przykładowe Zdarzenia</h2>
+        <ul>
+            <li><a href="click.html">click</a></li>
+            <li><a href="dblclick.html">double click</a></li>
+            <li><a href="mouseup-down.html">mouseup i mousedown</a></li>
+            <li><a href="mouseout-over.html">mouseover i mouseout</a></li>
+            <li><a href="mousemove.html">mouse move</a></li>
+            <li><a href="select.html">select</a></li>
+            <li><a href="focus.html">focus</a></li>
+            <li><a href="blur.html">blur</a></li>
+            <li><a href="change.html">change</a></li>
+        </ul>
+    </nav>
+    <div class="opis">
+        <h3>Opis Zdareznia</h3>
+        <p>
+            Zdarzenie <i>mouseover</i> aktywuje się po najechaniu kursorem na obiekt. <br>
+            Zdarzenie <i>mouseover</i> działa dobrze z zdarzeniem <i>mouseoout,</i> które aktywuje się po zajechaniu kursorem z obiektu.<br><br>
+            Poniej znajduje się lista, której elementy po po najechaniu na nie kursorem zmieniają kolor, a po zjechaniu z niego wracają do stanu początkowego.
+        </p>
+            <input id="b" class="na" onmouseover="moveb()" onmouseout="moveb()" value="podpunkt 1">
+            <input id="c" class="na" onmouseover="movec()" onmouseout="movec()" value="podpunkt 2">
+            <input id="d" class="na" onmouseover="moved()" onmouseout="moved()" value="podpunkt 3">
+            <div style="clear: both;"></div>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="przykład">
+        <p></p>
+    </div>
+    <footer>&copy; Sebastian Gabryś 2022</footer>
+    <script src="java.js"></script>
+</body>
+</html>
